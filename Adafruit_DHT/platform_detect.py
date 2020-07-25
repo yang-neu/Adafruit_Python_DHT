@@ -86,8 +86,9 @@ def pi_version():
     # Check /proc/cpuinfo for the Hardware field value.
     # 2708 is pi 1
     # 2709 is pi 2
-    # 2835 is pi 3 or pi 4
+    # 2835 is pi 3 or pi 0
     # 2837 is pi 3b+
+    # 2711 is pi 4
     # Anything else is not a pi.
     with open('/proc/cpuinfo', 'r') as infile:
         cpuinfo = infile.read()
